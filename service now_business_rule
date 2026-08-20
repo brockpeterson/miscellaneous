@@ -1,0 +1,20 @@
+(function executeRule(current, previous) {
+    var raw = current.u_symptoms.toString();
+    
+    var symptomRegex = /name=([^,]+), resourceName=([^,]+), resourceId=[^,]+, metricName=([^,]+), messageInfo=([^}]+)/g;
+    var match;
+    var formatted = [];
+    
+    while ((match = symptomRegex.exec(raw)) !== null) {
+        formatted.push(
+            "- " + match[1].trim() +
+            "\n   Resource: " + match[2].trim() +
+            "\n   Metric: " + match[3].trim() +
+            "\n   Value: " + match[4].trim()
+        );
+    }
+    
+    if (formatted.length > 0) {
+        current.u_symptoms = formatted.join("\n\n");
+    }
+})(current, previous);
