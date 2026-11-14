@@ -1,0 +1,241 @@
+	<AlertContent>
+		<LIExtractedFields>
+			<LIExtractedField displayName="vmw_nsx_agent_id" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3bm5sw45c7nfsa0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\, " preContextRegex="agentMoId = " searchTerms="EamListener"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_audit_module" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3bovsgs5c7nvxwi5lmmu000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="[^']+" postContextRegex="'" preContextRegex="ModuleName:'" searchTerms="auditlog"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_audit_time" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3bovsgs5c7oruw2zi0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="[^']+" postContextRegex="'" preContextRegex="Time:'" searchTerms="auditlog"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_audit_username" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3bovsgs5c7ovzwk4tomfwwk000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="[^']+" postContextRegex="'" preContextRegex="UserName:'" searchTerms="auditlog"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_comm_error_btwn_mgr_and_host" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3dn5ww2x3fojzg64s7mj2ho3s7nvtxex3bnzsf62dpon2a0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex=" Peer" preContextRegex="\- " searchTerms="heartbeat vshield"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_connection_failure_code" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3dn5xg4zldoruw63s7mzqws3dvojsv6y3pmrsq0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\d+" postContextRegex="\)" preContextRegex=" \(" searchTerms="EPSecMux"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_connection_failure_reason" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3dn5xg4zldoruw63s7mzqws3dvojsv64tfmfzw63q0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex=" \(" preContextRegex="48655\]\:\s+" searchTerms="EPSecMux"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_controller_ip" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3dn5xhi4tpnrwgk4s7nfya0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" postContextRegex="\) return" preContextRegex="node \(" searchTerms="nvp"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_eam_agency_name" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmfwv6ylhmvxgg6k7nzqw2zi0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex="\, ownerKey" preContextRegex="agencyName = " searchTerms="nsx-manager"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_eam_agent_moid" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmfwv6ylhmvxhix3nn5uwi000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\, " preContextRegex="moid=" searchTerms="EamListenerHelper"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_eam_agent_vm_health" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmfwv6ylhmvxhix3wnvpwqzlbnr2gq000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex="\, vsmAgentState" preContextRegex="healthState=" searchTerms="vsmagent"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_eam_agent_vm_name" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmfwv6ylhmvxhix3wnvpw4ylnmu000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex="\(" preContextRegex="Name=" searchTerms="vsmagent"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_eam_listener_hostid" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmfwv63djon2gk3tfojpwq33toruwi000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\,\s+" preContextRegex="hostid=" searchTerms="vsmagent"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_edge_firewall_action" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmrtwkx3gnfzgk53bnrwf6yldoruw63q0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex="_\w+" preContextRegex="\[?[\w-+]+\]?:\s+" searchTerms="firewall"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_edge_firewall_dst" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmrtwkx3gnfzgk53bnrwf6zdtoq000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex=" " preContextRegex="DST=" searchTerms="firewall"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_edge_firewall_dst_port" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmrtwkx3gnfzgk53bnrwf6zdtorpxa33soq000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex=" " preContextRegex="DPT=" searchTerms="firewall"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_edge_firewall_ruleid" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmrtwkx3gnfzgk53bnrwf64tvnrswsza0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="IN" preContextRegex="\w+\_" searchTerms="firewall"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_edge_firewall_src" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmrtwkx3gnfzgk53bnrwf643smm000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex=" DST" preContextRegex="SRC=" searchTerms="firewall"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_edge_protocol" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmrtwkx3qojxxi33dn5wa0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex=" " preContextRegex="PROTO=" searchTerms="firewall"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_edge_routing_bgp_peer_ip" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmrtwkx3sn52xi2lom5pwez3ql5ygkzlsl5uxa000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" postContextRegex=" \(Old" preContextRegex="Remote address: "/>
+			    <Filter filterFieldName="appname" filterOperator="CONTAINS" filterValue="routing"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_edge_routing_ospf_neighbor" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fmrtwkx3sn52xi2lom5pw643qmzpw4zljm5uge33s" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" postContextRegex=" \(IP" preContextRegex="Neighbor "/>
+			    <Filter filterFieldName="appname" filterOperator="CONTAINS" filterValue="routing"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_epsec_agency_status" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fobzwky27mftwk3tdpfpxg5dbor2xg000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex="\]" preContextRegex="newStatus = " searchTerms="received event from eam"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_epsec_hostname_ip" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fobzwky27nbxxg5domfwwkx3joa000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\, oldStatus" preContextRegex="hostName = " searchTerms="received event from eam"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_epsec_solution_id" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fobzwky27onxwy5lunfxw4x3jmq000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="\] at" preContextRegex="solution\[" searchTerms="(EPSEC) MuxSolutionHandler"/>
+			    <Filter filterFieldName="appname" filterOperator="CONTAINS" filterValue="epsecmux"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_esxi_vmk_component" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fon4gsx3wnvvv6y3pnvyg63tfnz2a0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex=":" preContextRegex="cpu[0-9]+:[0-9]+\)(WARNING: )?" searchTerms=""/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_event_code" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fozsw45c7mnxwizi0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\d+" postContextRegex="'" preContextRegex="Code:'" searchTerms="systemevent"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_event_severity" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fozsw45c7onsxmzlsnf2hs000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="(?:Major|Critical|High|medium|Informational)" postContextRegex="'" preContextRegex="Severity:'" searchTerms="systemevent "/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_event_source" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3fozsw45c7onxxk4tdmu000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="'" preContextRegex="Event Source:'" searchTerms="systemevent"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_action" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf6yldoruw63q0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex=" " preContextRegex="match " searchTerms="dfwpktlogs INET"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_client_to_server_bytes" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf6y3mnfsw45c7orxv643foj3gk4s7mj4xizlt" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="/\d+" preContextRegex=" \d+/\d+ " searchTerms="dfwpktlogs INET"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_dst" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf6zdtoq000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|[A-Fa-f0-9]{0,4}:([A-Fa-f0-9]{0,4}:){1,6}[A-Fa-f0-9]{1,4})" postContextRegex="(?: |/|$)" preContextRegex="\d+-&gt;" searchTerms="dfwpktlogs INET*"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_dst_ip_port" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf6zdtorpws4c7obxxe5a0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="[A-Fa-f\d\.:]+/\d+" postContextRegex="(?: |$)" preContextRegex="\d+-&gt;" searchTerms="dfwpktlogs INET"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_dst_port" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf6zdtorpxa33soq000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="(?: |$)" preContextRegex="\d+-&gt;[A-Fa-f\d\.:]+/" searchTerms="dfwpktlogs INET"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_protocol" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf64dsn52g6y3pnq000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\s" preContextRegex="(?:IN|OUT) (\d+ )?" searchTerms="dfwpktlogs INET"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_restart" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf64tfon2gc4tu" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="(?:stopped|started|restart)" postContextRegex="" preContextRegex="vShield\-Stateful\-Firewall " searchTerms="vshield-stateful-firewall"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_ruleid" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf64tvnrswsza0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex=" " preContextRegex="/" searchTerms="dfwpktlogs INET"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_server_to_client_bytes" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf643foj3gk4s7orxv6y3mnfsw45c7mj4xizlt" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="" preContextRegex=" \d+/\d+ \d+/" searchTerms="dfwpktlogs INET"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_src" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf643smm000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|[A-Fa-f0-9]{0,4}:([A-Fa-f0-9]{0,4}:){1,6}[A-Fa-f0-9]{1,4})" postContextRegex="(?:/|-&gt;)" preContextRegex="\S+\s+" searchTerms="dfwpktlogs: INET*"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_firewall_traffic_direction" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3gnfzgk53bnrwf65dsmftgm2ldl5sgs4tfmn2gs33o" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="(?:IN|OUT)" postContextRegex=" \d+" preContextRegex="\d+ " searchTerms="dfwpktlogs: INET"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_gi_sam_state" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3hnfpxgylnl5zxiylumu000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="'" preContextRegex="state '" searchTerms="SAM_USVM_HB_ALERT"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_host_id" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3in5zxix3jmq000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="'\, client" preContextRegex="token = '" searchTerms="client id"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_host_moid" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3in5zxix3nn5uwi000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\,\s+" preContextRegex="hostMoId = " searchTerms="eamlistener"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_#_vips" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpsgx3wnfyhg000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="\," preContextRegex="vipno:" searchTerms="loadbalancer vipup"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_#_vips_up" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpsgx3wnfyhgx3voa000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="\," preContextRegex="vipup:" searchTerms="loadbalancer vipup"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_access_response_code" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpwcy3dmvzxgx3smvzxa33oonsv6y3pmrsq0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex=" \d+" preContextRegex="(?:GET|PUT|POST|DELETE) [^&quot;]+&quot; " searchTerms="loadbalancer"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_access_response_time" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpwcy3dmvzxgx3smvzxa33oonsv65djnvsq0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex=" [a-zA-Z\-]{4}" preContextRegex="\d+ " searchTerms="loadbalancer"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_access_server" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpwcy3dmvzxgx3tmvzhmzls" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="&quot; \d+ \d+ \d+ \d+ \d+ [a-zA-Z\-]{4}" preContextRegex="&quot;" searchTerms="loadbalancer"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_access_url" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpwcy3dmvzxgx3vojwa0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex=" HTTP" preContextRegex="(?:GET|PUT|POST|DELETE) " searchTerms="loadbalancer"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_access_vip_name" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpwcy3dmvzxgx3wnfyf63tbnvsq0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="&quot;" preContextRegex="(?:GET|POST|PUT|DELETE) [^&quot;]+&quot; \d+ \d+ &quot;&quot; &quot;&quot; \d+ \d+ &quot;" searchTerms="loadbalancer"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_concurrent_con" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpwg33omn2xe4tfnz2f6y3pny000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d*\.?\d+" postContextRegex="\," preContextRegex="cc:" searchTerms="loadbalancer vipup"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_member_ip" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpw2zlnmjsxex3joa000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" postContextRegex="\,port" preContextRegex="ip:" searchTerms="loadbalancer"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_member_port" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpw2zlnmjsxex3qn5zhi000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="\,status" preContextRegex="port:" searchTerms="loadbalancer member"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_nagios_alert" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpw4ylhnfxxgx3bnrsxe5a0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex="" preContextRegex="nagios .* SERVICE ALERT" searchTerms="nagios alert"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_new_con_rate" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpw4zlxl5rw63s7ojqxizi0" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d*\.?\d+" postContextRegex="\," preContextRegex="nc:" searchTerms="loadbalancer vipup"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_no_available_server" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpw4327mf3gc2lmmfrgyzk7onsxe5tfoi000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex="" preContextRegex="loadbalancer .* has no server available!" searchTerms="loadbalancer server"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_pool_member_name" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxa33pnrpw2zlnmjsxex3omfwwk000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\,ip" preContextRegex="member:" searchTerms="loadbalancer member stats"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_pool_member_status" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxa33pnrpw2zlnmjsxex3torqxi5lt" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d+" postContextRegex="\,vip" preContextRegex="status:" searchTerms="loadbalancer member stats"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_pool_name" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxa33pnrpw4ylnmu000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\,member" preContextRegex="pool:" searchTerms="loadbalancer member stats"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_ram" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxeyln" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d*\.?\d+" postContextRegex="%\," preContextRegex="ram:" searchTerms="loadbalancer vipup"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_server_down" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxgzlsozsxex3en53w4000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex="" preContextRegex="" searchTerms="loadbalancer server &quot;is down&quot;"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_status" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxg5dbor2xg000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex="" preContextRegex="status:" searchTerms="loadbalancer vipup"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_throughput" displayNamespace="nsxcp" info="&lt;span&gt;Load balancer throughput&lt;/span&gt;&lt;br&gt;" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxi2dsn52wo2dqov2a0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d*\.?\d+" postContextRegex="\," preContextRegex="tp:" searchTerms="loadbalancer vipup"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_vip_concurrent_con" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxm2lql5rw63tdovzhezloorpwg33o" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d*\.?\d+" postContextRegex="\," preContextRegex="cc:" searchTerms="loadbalancer virtual server stats"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_vip_ip_port" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxm2lql5uxax3qn5zhi000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+?" postContextRegex="\," preContextRegex="\,ip:" searchTerms="loadbalancer virtual server stats"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_vip_name" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxm2lql5xgc3lf" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+?" postContextRegex="(?:\,| )" preContextRegex="vip:" searchTerms="loadbalancer"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_vip_rate" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxm2lql5zgc5df" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d*\.?\d+" postContextRegex="" preContextRegex="nc:" searchTerms="loadbalancer virtual server stats"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_vip_status" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxm2lql5zxiyluovzq0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex="\," preContextRegex="status:" searchTerms="loadbalancer virtual server stats"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_lb_vip_throughput" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3mmjpxm2lql52gq4tpovtwq4dvoq000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="-?\d*\.?\d+" postContextRegex="\," preContextRegex="tp:" searchTerms="loadbalancer virtual server stats"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_mux_host" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3nov4f62dpon2a0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="" preContextRegex="host: " searchTerms="nsx-manager"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_operation" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3pobsxeylunfxw4000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="[^']+" postContextRegex="'" preContextRegex="Operation:'" searchTerms="auditlog"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_operation_status" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3pobsxeylunfxw4x3torqxi5lt" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\w+" postContextRegex="'\," preContextRegex="Status:'" searchTerms="AuditingServiceImpl"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_resource" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3smvzw65lsmnsq0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="[^']+" postContextRegex="'" preContextRegex="Resource:'" searchTerms="auditlog"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_svm_ip" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3tozwv62lq" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" postContextRegex="\:\d+\]" preContextRegex="\[" searchTerms="EPSecMux"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_systemevent_message" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3tpfzxizlnmv3gk3tul5wwk43tmftwk000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="[^']+" postContextRegex="'" preContextRegex="Message:'" searchTerms="systemevent"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_systemevent_module" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3tpfzxizlnmv3gk3tul5ww6zdvnrsq0000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="[^']+" postContextRegex="'" preContextRegex="Module(name)?:'" searchTerms="systemevent"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_usvm_name" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3von3g2x3omfwwk000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex="\S+" postContextRegex="\.'\, Module" preContextRegex="USVM " searchTerms="Code:'295002'"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_vdrb_lif_error" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3wmrzgex3mnftf6zlsojxxe000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex="" preContextRegex="WARNING.+ vdrb.*lif" searchTerms="vdrb lif"/>
+			</LIExtractedField>
+			<LIExtractedField displayName="vmw_nsx_vxlan_init_order_error" displayNamespace="nsxcp" info="" internalName="ibadcns7mnxw2ltwnv3wc4tffzxhg6bnoz3g2527nzzxqx3wpbwgc3s7nfxgs5c7n5zgizlsl5sxe4tpoi000000" namespace="com.vmware.nsx-v" owner="user">
+			    <Context extractionRegex=".*" postContextRegex=" : Would block" preContextRegex="VDL2PortPropSet" searchTerms="vxlan"/>
+			</LIExtractedField>
+		</LIExtractedFields>
+	</AlertContent>
